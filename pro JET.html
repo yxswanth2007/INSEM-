@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Profile</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #eef2f7;
+            color: #333;
+        }
+
+        header {
+            background: #253b80;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        nav {
+            background: #172554;
+            padding: 12px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        .profile {
+            background: white;
+            max-width: 750px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 4px 12px #00000020;
+        }
+
+        .profile img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #253b80;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #253b80;
+            margin-bottom: 15px;
+        }
+
+        .section {
+            background: white;
+            max-width: 750px;
+            margin: 20px auto;
+            padding: 25px;
+            border-radius: 12px;
+        }
+
+        .section p {
+            line-height: 1.8;
+        }
+
+        button {
+            background: #253b80;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin-top: 15px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #4169e1;
+        }
+
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+            .profile, .section {
+                margin: 15px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Profile</h1>
+        <p>Welcome to My Personal Website</p>
+    </header>
+
+    <nav>
+        <a href="#profile">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="profile" id="profile">
+        <img
+            src="https://placehold.co/200x200?text=Student"
+            alt="Student profile photo">
+
+        <h2>ROHITH</h2>
+        <p>Computer Science Student</p>
+        <p>College Name | Your City</p>
+
+        <button onclick="showMessage()">Say Hello</button>
+    </div>
+
+    <div class="section" id="about">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am a student interested in technology,
+            programming, and web development. I enjoy learning
+            new skills and working on creative projects.
+        </p>
+    </div>
+
+    <div class="section" id="education">
+        <h2>Education</h2>
+        <p><strong>Degree:</strong> B.Tech /</p>
+        <p><strong>Department:</strong> Computer Science</p>
+        <p><strong>College:</strong> KL University</p>
+        <p><strong>Year:</strong> 2026</p>
+    </div>
+
+    <div class="CSE2" id="skills">
+        <h2>My Skills</h2>
+        <p>HTML - CSS - JavaScript - Python - Communication</p>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>Contact Me</h2>
+        <p><strong>Email:</strong> yawanthpulagam@email.com</p>
+        <p><strong>Phone:</strong> 9100110777</p>
+        <p><strong>Location:</strong> vijayawada, India</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 P.yaswanth | Student Profile Website</p>
+    </footer>
+
+    <script>
+        function showMessage() {
+            alert("Hello! Welcome to my student profile website.");
+        }
+    </script>
+
+</body>
+</html>
+
